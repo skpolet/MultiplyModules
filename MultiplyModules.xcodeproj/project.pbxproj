@@ -18,6 +18,10 @@
 		E1716D1E24704930002B9D81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1716D1C24704930002B9D81 /* LaunchScreen.storyboard */; };
 		E1716D2924704930002B9D81 /* MultiplyModulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1716D2824704930002B9D81 /* MultiplyModulesTests.swift */; };
 		E1716D3424704931002B9D81 /* MultiplyModulesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1716D3324704931002B9D81 /* MultiplyModulesUITests.swift */; };
+		E1716EBA2470576C002B9D81 /* ModuleA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1716EB82470576C002B9D81 /* ModuleA.framework */; };
+		E1716EBB2470576C002B9D81 /* ModuleA.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1716EB82470576C002B9D81 /* ModuleA.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E1716EBC2470576C002B9D81 /* ModuleB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1716EB92470576C002B9D81 /* ModuleB.framework */; };
+		E1716EBD2470576C002B9D81 /* ModuleB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1716EB92470576C002B9D81 /* ModuleB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,21 @@
 			remoteInfo = MultiplyModules;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E1716EBE2470576C002B9D81 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E1716EBB2470576C002B9D81 /* ModuleA.framework in Embed Frameworks */,
+				E1716EBD2470576C002B9D81 /* ModuleB.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0B661969D84957075AC25A62 /* Pods-MultiplyModules.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiplyModules.debug.xcconfig"; path = "Target Support Files/Pods-MultiplyModules/Pods-MultiplyModules.debug.xcconfig"; sourceTree = "<group>"; };
@@ -58,6 +77,8 @@
 		E1716D2F24704931002B9D81 /* MultiplyModulesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiplyModulesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1716D3324704931002B9D81 /* MultiplyModulesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplyModulesUITests.swift; sourceTree = "<group>"; };
 		E1716D3524704931002B9D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1716EB82470576C002B9D81 /* ModuleA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1716EB92470576C002B9D81 /* ModuleB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModuleB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E675866715B6A237639537A5 /* Pods-MultiplyModules-MultiplyModulesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiplyModules-MultiplyModulesUITests.release.xcconfig"; path = "Target Support Files/Pods-MultiplyModules-MultiplyModulesUITests/Pods-MultiplyModules-MultiplyModulesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EBF09F063A00896B42A520F9 /* Pods-MultiplyModules.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiplyModules.release.xcconfig"; path = "Target Support Files/Pods-MultiplyModules/Pods-MultiplyModules.release.xcconfig"; sourceTree = "<group>"; };
 		EC59856C2A1C76700081A3D2 /* Pods_MultiplyModulesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiplyModulesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1716EBC2470576C002B9D81 /* ModuleB.framework in Frameworks */,
+				E1716EBA2470576C002B9D81 /* ModuleA.framework in Frameworks */,
 				7A6B2F439C9E8CA2CA5BB93C /* Pods_MultiplyModules.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,13 +124,14 @@
 				D7C31F70323AFAA9ECCB11ED /* Pods-MultiplyModulesTests.debug.xcconfig */,
 				1F6A330A6ABD438BD9AD3B05 /* Pods-MultiplyModulesTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		BC143D29A94C0D33E1543171 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E1716EB82470576C002B9D81 /* ModuleA.framework */,
+				E1716EB92470576C002B9D81 /* ModuleB.framework */,
 				8AE29495FD5B9626BAD54AC9 /* Pods_MultiplyModules.framework */,
 				56BA2B2D45056ABBA28822F8 /* Pods_MultiplyModules_MultiplyModulesUITests.framework */,
 				EC59856C2A1C76700081A3D2 /* Pods_MultiplyModulesTests.framework */,
@@ -180,6 +204,7 @@
 				E1716D0A2470492D002B9D81 /* Sources */,
 				E1716D0B2470492D002B9D81 /* Frameworks */,
 				E1716D0C2470492D002B9D81 /* Resources */,
+				E1716EBE2470576C002B9D81 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

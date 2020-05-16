@@ -16,5 +16,10 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func openA(_ sender: Any) {
+        
+    }
+    @IBAction func openB(_ sender: Any) {
+    }
 }
 

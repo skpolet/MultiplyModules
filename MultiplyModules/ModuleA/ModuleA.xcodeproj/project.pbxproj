@@ -10,6 +10,7 @@
 		E1716E5224705484002B9D81 /* ModuleA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1716E4824705484002B9D81 /* ModuleA.framework */; };
 		E1716E5724705484002B9D81 /* ModuleATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1716E5624705484002B9D81 /* ModuleATests.swift */; };
 		E1716E5924705484002B9D81 /* ModuleA.h in Headers */ = {isa = PBXBuildFile; fileRef = E1716E4B24705484002B9D81 /* ModuleA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1716EB7247055CE002B9D81 /* ModuleA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1716EB6247055CE002B9D81 /* ModuleA.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		E1716E5124705484002B9D81 /* ModuleATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModuleATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1716E5624705484002B9D81 /* ModuleATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleATests.swift; sourceTree = "<group>"; };
 		E1716E5824705484002B9D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1716EB6247055CE002B9D81 /* ModuleA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleA.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				E1716E4B24705484002B9D81 /* ModuleA.h */,
 				E1716E4C24705484002B9D81 /* Info.plist */,
+				E1716EB6247055CE002B9D81 /* ModuleA.swift */,
 			);
 			path = ModuleA;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					E1716E4724705484002B9D81 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					E1716E5024705484002B9D81 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1716EB7247055CE002B9D81 /* ModuleA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		E1716E5D24705484002B9D81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = XBW4F9AQY3;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Mikhailov.ModuleA;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		E1716E5E24705484002B9D81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = XBW4F9AQY3;
@@ -388,6 +396,7 @@
 		E1716E6024705484002B9D81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XBW4F9AQY3;
 				INFOPLIST_FILE = ModuleATests/Info.plist;
@@ -406,6 +415,7 @@
 		E1716E6124705484002B9D81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XBW4F9AQY3;
 				INFOPLIST_FILE = ModuleATests/Info.plist;
