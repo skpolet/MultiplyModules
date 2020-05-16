@@ -1,0 +1,6 @@
+framework module Pods_MultiplyModules_MultiplyModulesUITests {
+  umbrella header "Pods-MultiplyModules-MultiplyModulesUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
