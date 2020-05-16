@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import ModuleA
+import ModuleB
 
 class ViewController: UIViewController {
 
@@ -17,9 +19,12 @@ class ViewController: UIViewController {
 
 
     @IBAction func openA(_ sender: Any) {
-        
+        let moduleA = ModuleA()
+        present(moduleA, animated: true, completion: nil)
     }
     @IBAction func openB(_ sender: Any) {
+        let moduleB = ModuleB()
+        present(moduleB, animated: true, completion: nil)
     }
 }
 
