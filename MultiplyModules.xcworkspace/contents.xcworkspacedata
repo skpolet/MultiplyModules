@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MultiplyModules/ModuleB/ModuleB.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:MultiplyModules/ModuleA/ModuleA.xcodeproj">
    </FileRef>
    <FileRef
