@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     @IBAction func openA(_ sender: Any) {
         let moduleA = ModuleA()
         present(moduleA, animated: true, completion: nil)
+        print(Bundle.main.bundleIdentifier!)
     }
     @IBAction func openB(_ sender: Any) {
         let moduleB = ModuleB()
