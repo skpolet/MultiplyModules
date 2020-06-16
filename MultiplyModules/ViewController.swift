@@ -22,7 +22,6 @@ class ViewController: UIViewController {
         let moduleA = ModuleA()
         present(moduleA, animated: true, completion: nil)
         print(Bundle.main.bundleIdentifier!)
-        testiruemHound.printF(str: "123123")
     }
     @IBAction func openB(_ sender: Any) {
         let moduleB = ModuleB()
