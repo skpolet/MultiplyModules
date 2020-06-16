@@ -1,3 +1,4 @@
+osx_image: xcode11
 language: swift
 xcode_project: MultiplyModules.xcworkspace # path to your xcodeproj folder
 xcode_scheme: MultiplyModules
